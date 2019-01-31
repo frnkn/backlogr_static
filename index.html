@@ -40,6 +40,29 @@
 		<style>
 			p { color: #333 !important; }
 		</style>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#6cbb23",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#ffffff",
+      "text": "#030000"
+    }
+  },
+  "showLink": false,
+  "content": {
+    "message": "Wir benutzen Cookies damit wir Ihnen eine gute Website anbieten.",
+    "dismiss": "Ok"
+  }
+})});
+</script>
 	</head>
 	<body>
 	<div class="oz-body-wrap">
