@@ -653,5 +653,24 @@ window.cookieconsent.initialise({
 					});
 			});
 		</script>
+
+	<script>
+
+	if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('sw.js').then(function(registration) {
+		if ('pushManager' in registration) {
+		// The service worker supports push
+		console.log("PUSH WORKDS");
+		} else {
+		// The service worker doesn't support push
+		console.log("PUSH DOES NOT WORKDS");
+		}
+	});
+	} else {
+	// The browser doesn't support service workers
+	console.log("SERVICE WORKERS ARE NOT WORKING")
+	}
+		
+	</script>
 	</body>
 </html>
