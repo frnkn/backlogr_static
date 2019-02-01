@@ -1,14 +1,14 @@
 
 
 
-   var VERSION = 'v1';
+var VERSION = 'v1';
 
 var cacheFirstFiles = [
   // ADDME: Add paths and URLs to pull from cache first if it has been loaded before. Else fetch from network.
   // If loading from cache, fetch from network in the background to update the resource. Examples:
   // 'assets/img/logo.png',
   // 'assets/models/controller.gltf',
-        '/css/linearicons.css',
+          '/css/linearicons.css',
           '/css/font-awesome.min.css',
           '/css/bootstrap.css',
           '/css/main.css',
@@ -29,7 +29,8 @@ var networkFirstFiles = [
   // 'index.html',
   // 'build/build.js',
   // 'css/index.css'
-  '/js/main.js'
+  'index.hmtl',
+  '/js/main.js',
 ];
 
 // Below is the service worker code.
