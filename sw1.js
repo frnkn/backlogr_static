@@ -1,7 +1,7 @@
 
 
 
-var VERSION = 'v1';
+var VERSION = 'v2';
 
 var cacheFirstFiles = [
   // ADDME: Add paths and URLs to pull from cache first if it has been loaded before. Else fetch from network.
