@@ -657,18 +657,15 @@ window.cookieconsent.initialise({
 	<script>
 
 	if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('sw1.js').then(function(registration) {
-		if ('pushManager' in registration) {
-		// The service worker supports push
-		console.log("PUSH WORKDS");
-		} else {
-		// The service worker doesn't support push
-		console.log("PUSH DOES NOT WORKDS");
-		}
-	});
-	} else {
-	// The browser doesn't support service workers
-	console.log("SERVICE WORKERS ARE NOT WORKING")
+		console.log("Service Worker reg in progress");
+		navigator.serviceWorker.register('/sw2.js').then(function() {
+			console.log("Service worker registration completed");
+		}, function(){
+			console.log("Service Worker registration failed");
+		});
+	}
+	else {
+		console.log("Service worker not supported");
 	}
 		
 	</script>
